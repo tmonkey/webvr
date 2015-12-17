@@ -8,18 +8,24 @@
   </head>
   <body>
     <a-scene>
+		<a-camera position="-1 5 10" near="0.1" rotation="5 0 0" cursor-visible="false"  wasd-controls-enabled="true"></a-camera>
+		
       <!-- <a-sphere position="0 1.25 -1" radius="1.25" color="#EF2D5E"></a-sphere>
       <a-cube position="-1 0.5 1" rotation="0 45 0" width="1" height="1" depth="1"  color="#4CC3D9"></a-cube>
       <a-cylinder position="1 0.75 1" radius="0.5" height="1.5" color="#FFC65D"></a-cylinder>
       <a-plane rotation="-90 0 0" width="4" height="4" color="#7BC8A4"></a-plane> -->
 		  <a-cube src="images/a-ev.png" position="0 0 0">
 		    <!-- <a-animation attribute="rotation" from="0 0 0" to="0 360 0" repeat="indefinite" easing="linear"></a-animation> -->
+			<a-animation attribute="position" from="0 100 0" to="0 0 0"></a-animation>
+			</a-entity>
 		  </a-cube>
-		  <a-cube src="images/b-lv.png" position="1.5 0 0"></a-cube>
-		 <a-cube src="images/c-ev.png" position="3 0 0"></a-cube>
-		 <a-cube src="images/d-id.png" position="4.5 0 0"></a-cube>
-		 <a-cube src="images/e-cr.png" position="0 0 -1.5"></a-cube>
-		 <a-cube src="images/f-dr.png" position="1.5 0 -1.5"></a-cube>
+		  <a-cube src="images/b-lv.png" position="1.5 0 0"><a-animation attribute="position" from="1.5 100 0" to="1.5 0 0"></a-animation>
+			</a-entity></a-cube>
+		 <a-cube src="images/c-ev.png" position="3 0 0"><a-animation attribute="position" from="3 100 0" to="3 0 0"></a-animation>
+			</a-entity></a-cube>
+		 <a-cube src="images/d-id.png" position="4.5 0 0"><a-animation attribute="position" from="4.5 100 0" to="4.5 0 0"></a-animation></a-cube>
+		 <a-cube src="images/e-cr.png" position="0 0 -1.5"><a-animation attribute="position" from="0 100 -1.5" to="0 0 -1.5"></a-animation></a-cube>
+		 <a-cube src="images/f-dr.png" position="1.5 0 -1.5"><a-animation attribute="position" from="1.5 100 -1.5" to="1.5 0 -1.5"></a-animation></a-cube>
       <a-sky color="#ECECEC"></a-sky>
     </a-scene>
   </body>
